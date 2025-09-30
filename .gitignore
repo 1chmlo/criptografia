@@ -1,0 +1,30 @@
+# Large files that should not be tracked
+*.txt.zip
+rockyou.txt
+rockyou.txt.zip
+
+# Python virtual environments
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# IDE and OS files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Files larger than 50MB (GitHub's recommended limit)
+*.large
