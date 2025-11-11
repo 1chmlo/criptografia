@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  c1:
+    build: ./C1
+    container_name: C1
+  c2:
+    build: ./C2
+    container_name: C2
+  c3:
+    build: ./C3
+    container_name: C3
+  c4-s1:
+    build: ./C4-S1
+    container_name: C4-S1
+    ports:
+      - "2222:22"
