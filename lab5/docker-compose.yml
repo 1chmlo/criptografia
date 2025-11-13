@@ -5,16 +5,22 @@ services:
     container_name: C1
     stdin_open: true
     tty: true
+    volumes:
+      - ./capturas/c1:/capturas
   c2:
     build: ./C2
     container_name: C2
     stdin_open: true
     tty: true
+    volumes:
+      - ./capturas/c2:/capturas
   c3:
     build: ./C3
     container_name: C3
     stdin_open: true
     tty: true
+    volumes:
+      - ./capturas/c3:/capturas
   c4-s1:
     build: ./C4-S1
     container_name: C4-S1
@@ -22,3 +28,5 @@ services:
     tty: true
     ports:
       - "2222:22"
+    volumes:
+      - ./capturas/c4-s1:/capturas

@@ -2,7 +2,8 @@ FROM ubuntu:22.04
 
 RUN apt-get update && apt-get install -y \
     openssh-client \
-    openssh-server 
+    openssh-server \
+    tcpdump 
 
 RUN useradd -m -s /bin/bash prueba && \
     echo 'prueba:prueba' | chpasswd
