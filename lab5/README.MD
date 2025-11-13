@@ -1,3 +1,10 @@
+para configurar el usuario prueba se utiliza el comando
+
+```bash
+useradd -m -s /bin/bash prueba && \
+    echo 'prueba:prueba' | chpasswd
+```
+
 para realizar la captura se utilizan 2 terminales:
 
 - Terminal 1: Captura.
