@@ -11,7 +11,7 @@ para realizar la captura se utilizan 2 terminales:
 
 ```bash
 sudo docker exec -it nombre_contenedor_cliente bash
-tcpdump -i any -w /capturas/captura_completa.pcapng
+tcpdump -i any -w /capturas/captura.pcapng
 ```
 
 - Terminal 2: Conexión SSH.

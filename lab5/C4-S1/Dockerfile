@@ -5,6 +5,9 @@ RUN apt-get update && apt-get install -y \
     openssh-server \
     tcpdump 
 
+RUN useradd -m -s /bin/bash prueba && \
+    echo 'prueba:prueba' | chpasswd
+
 RUN mkdir -p /var/run/sshd && \
     sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config
 

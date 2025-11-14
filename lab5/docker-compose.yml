@@ -30,3 +30,8 @@ services:
       - "2222:22"
     volumes:
       - ./capturas/c4-s1:/capturas
+#  cliente-ssh:
+#    build: ./cliente-ssh
+#    container_name: cliente-ssh
+#    depends_on:
+#      - c4-s1
